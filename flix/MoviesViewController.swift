@@ -32,8 +32,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 self.movies = dataDictionary["results"] as! [[String:Any]]
                 
                 self.tableView.reloadData()
-                
-                print(self.movies)
             }
         }
         task.resume()
@@ -58,5 +56,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.posterImage.af_setImage(withURL: posterURL!)
         
         return cell
+    }
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Pass selected movie into new view
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        let detailViewController = segue.destination as! MovieDetailViewController
+        detailViewController.movie = movie
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

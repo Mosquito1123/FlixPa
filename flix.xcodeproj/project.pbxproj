@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		077DA7D4232DC02F0066D719 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077DA7D3232DC02F0066D719 /* MovieCell.swift */; };
 		077F0A11232739BD0095B3CD /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F0A10232739BD0095B3CD /* MoviesViewController.swift */; };
+		07B9BAD323306BFA00478104 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9BAD223306BFA00478104 /* MovieDetailViewController.swift */; };
 		07EF8651232732640088FA0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF8650232732640088FA0D /* AppDelegate.swift */; };
 		07EF8656232732640088FA0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EF8654232732640088FA0D /* Main.storyboard */; };
 		07EF8658232732660088FA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EF8657232732660088FA0D /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		077DA7D3232DC02F0066D719 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		077F0A10232739BD0095B3CD /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		07B9BAD223306BFA00478104 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		07EF864D232732640088FA0D /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EF8650232732640088FA0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07EF8655232732640088FA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				07EF8654232732640088FA0D /* Main.storyboard */,
 				077DA7D3232DC02F0066D719 /* MovieCell.swift */,
 				077F0A10232739BD0095B3CD /* MoviesViewController.swift */,
+				07B9BAD223306BFA00478104 /* MovieDetailViewController.swift */,
 				07EF8657232732660088FA0D /* Assets.xcassets */,
 				07EF8659232732660088FA0D /* LaunchScreen.storyboard */,
 				07EF865C232732660088FA0D /* Info.plist */,
@@ -155,7 +158,6 @@
 				E3A4BD94A035ED174D0BF472 /* Pods-flixUITests.debug.xcconfig */,
 				D80D12BB2CB94345E9261BFF /* Pods-flixUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -390,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B9BAD323306BFA00478104 /* MovieDetailViewController.swift in Sources */,
 				07EF8651232732640088FA0D /* AppDelegate.swift in Sources */,
 				077F0A11232739BD0095B3CD /* MoviesViewController.swift in Sources */,
 				077DA7D4232DC02F0066D719 /* MovieCell.swift in Sources */,
