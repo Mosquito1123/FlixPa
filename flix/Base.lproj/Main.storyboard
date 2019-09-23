@@ -172,6 +172,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2KH-Mq-gF6" propertyAccessControl="none"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2N6-7h-KYA"/>
                     <connections>
                         <outlet property="movieBackdrop" destination="zZD-O9-ZCc" id="42W-Xb-eO7"/>
                         <outlet property="movieDescription" destination="BCx-cg-Qnq" id="AEx-ik-jAL"/>
@@ -182,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRC-8G-wxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1235" y="-96"/>
+            <point key="canvasLocation" x="1675" y="342"/>
         </scene>
         <!--Superheroes-->
         <scene sceneID="YtA-nr-onf">
@@ -222,6 +223,7 @@
                                         <size key="customSize" width="300" height="450"/>
                                         <connections>
                                             <outlet property="posterView" destination="Gen-7E-pcp" id="sUs-A1-sH6"/>
+                                            <segue destination="S9Y-cV-PrV" kind="show" id="ZVU-tO-td8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -242,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxO-N0-K6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3342.0289855072465" y="-96.428571428571431"/>
+            <point key="canvasLocation" x="471" y="759"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Oa3-pz-Af2">
@@ -260,7 +262,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KL-aj-ZEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="-901"/>
+            <point key="canvasLocation" x="-304" y="-917"/>
         </scene>
         <!--All Movies-->
         <scene sceneID="qNu-aG-CpI">
@@ -280,7 +282,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlP-LX-Iu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-304.34782608695656" y="-96.428571428571431"/>
+            <point key="canvasLocation" x="-304" y="-96"/>
         </scene>
         <!--Superheroes-->
         <scene sceneID="iLb-MX-RfF">
@@ -300,11 +302,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="av2-R1-fAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2431.8840579710145" y="-96.428571428571431"/>
+            <point key="canvasLocation" x="-304" y="759"/>
         </scene>
     </scenes>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lUQ-l1-XWq"/>
+    </inferredMetricsTieBreakers>
 </document>
