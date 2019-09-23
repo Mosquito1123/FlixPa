@@ -30,7 +30,7 @@ class MovieDetailViewController: UIViewController {
         let releaseDate = movie["release_date"] as! String
         movieYear.text = String(releaseDate.prefix(4))
 
-        let posterBaseURL = "https://image.tmdb.org/t/p/w185/"
+        let posterBaseURL = "https://image.tmdb.org/t/p/w342/"
         let posterPath = movie["poster_path"] as! String
         let posterURL = URL(string: posterBaseURL + posterPath)
 

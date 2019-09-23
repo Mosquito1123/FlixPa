@@ -55,7 +55,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         let movie = movies[indexPath.item]
         
-        let baseURL = "https://image.tmdb.org/t/p/w185/"
+        let baseURL = "https://image.tmdb.org/t/p/w500/"
         let posterPath = movie["poster_path"] as! String
         let posterURL = URL(string: baseURL + posterPath)
         
