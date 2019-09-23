@@ -192,31 +192,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxp-JY-Ou8">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxp-JY-Ou8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DqL-f0-yoy">
-                                    <size key="itemSize" width="200" height="300"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="5" sectionInsetReference="safeArea" id="DqL-f0-yoy">
+                                    <size key="itemSize" width="300" height="450"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="m42-gz-9G1" customClass="MovieGridCell" customModule="flix" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                        <rect key="frame" x="57" y="0.0" width="300" height="450"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8aj-1u-Yjk">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="450"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-7E-pcp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-7E-pcp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="450"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Gen-7E-pcp" secondAttribute="bottom" id="C7i-yk-xlr"/>
+                                                <constraint firstItem="Gen-7E-pcp" firstAttribute="leading" secondItem="8aj-1u-Yjk" secondAttribute="leading" id="glk-h0-i0M"/>
+                                                <constraint firstItem="Gen-7E-pcp" firstAttribute="top" secondItem="8aj-1u-Yjk" secondAttribute="top" id="rjM-G7-fw6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gen-7E-pcp" secondAttribute="trailing" id="uIY-qo-aoA"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="200" height="300"/>
+                                        <size key="customSize" width="300" height="450"/>
                                         <connections>
                                             <outlet property="posterView" destination="Gen-7E-pcp" id="sUs-A1-sH6"/>
                                         </connections>
@@ -224,6 +227,12 @@
                                 </cells>
                             </collectionView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="lxp-JY-Ou8" firstAttribute="trailing" secondItem="AIz-b8-WkS" secondAttribute="trailing" id="8GB-cL-2Ou"/>
+                            <constraint firstAttribute="bottom" secondItem="lxp-JY-Ou8" secondAttribute="bottom" id="A6f-uw-Lb5"/>
+                            <constraint firstItem="lxp-JY-Ou8" firstAttribute="leading" secondItem="AIz-b8-WkS" secondAttribute="leading" id="Ok4-ot-KKO"/>
+                            <constraint firstItem="lxp-JY-Ou8" firstAttribute="top" secondItem="aXV-mj-Y59" secondAttribute="top" id="e9B-2H-VE7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AIz-b8-WkS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Superheroes" id="95A-JY-1Dx"/>

@@ -11,4 +11,11 @@ import UIKit
 class MovieGridCell: UICollectionViewCell {
     
     @IBOutlet weak var posterView: UIImageView!
+    
+    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+        setNeedsLayout()
+        layoutIfNeeded()
+        
+        return layoutAttributes
+    }
 }
